@@ -53,7 +53,7 @@ public class SegundaQuestao {
         // Imprimir a matriz de temperaturas
         for (int semana = 0; semana < 4; semana++){
             for(int semanadia = 0; semanadia < 7; semanadia++){
-                System.out.printf("%.2f\t", matriztemperaturas[semanadia][semana]);
+                System.out.printf("%.2f°C\t", matriztemperaturas[semanadia][semana]);
             }
             System.out.println();
         }
@@ -61,11 +61,11 @@ public class SegundaQuestao {
         // Imprimir a média das temperaturas para cada dia da semana
         System.out.println("\nMédia das temperaturas para cada dia da semana: ");
         for (int i = 0; i < 7; i++) {
-            System.out.println(diassemana[i] + ": " + String.format("%.2f", mediapordiasdasemana[i]));
+            System.out.println(diassemana[i] + ": " + String.format("%.2f°C", mediapordiasdasemana[i]));
         }
 
         // Imprimir a média geral das temperaturas
-        System.out.println("\nMédia geral das temperaturas: " + String.format("%.2f", mediageral));
+        System.out.println("\nMédia geral das temperaturas: " + String.format("%.2f°C", mediageral));
         System.out.println();
     }
 }
