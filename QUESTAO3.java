@@ -24,18 +24,18 @@ public class TerceiraQuestao {
                 System.out.print("Digite o número da cidade de destino de 1 a 7: "); //escolher a cidade de destino
                 int destino = scanner.nextInt();
 
+                if (origem == destino) {   // Verifica se a origem é igual ao destino para encerrar o programa
+                    System.out.println("Voce colocou a mesma cidade para origem e destino.");
+                    break;
+                }                
                 
                 if (origem >= 1 && origem <= 7 && destino >= 1 && destino <= 7) {   //confirma que as cidades estao dentro do tempo permitido, pois nao pode ser menor que 1 nem maior que 7
                     int tempo = tempopCidades[origem - 1][destino - 1];
                     System.out.println("Tempo entre as cidades " + origem + " e " + destino + ": " + tempo + " horas");
 
                     
-                    if (origem == destino) {   // Verifica se a origem é igual ao destino para encerrar o programa
-                        System.out.println("Voce colocou a mesma cidade para origem e destino.");
-                        break;
-                    }
                 } else {
                     System.out.println("Por favor, digite números entre 1 e 7.");
-                } } 
+                } 
             }
-        }
+        } }
